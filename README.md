@@ -44,13 +44,21 @@ apt install -y gnupg2 ca-certificates lsb-release ubuntu-keyring && curl https:/
 curl -Lo /usr/local/etc/xray/config.json https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/config_server.json && curl -Lo /etc/nginx/nginx.conf https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/nginx.conf
 ```
 
-4. 下载[路由规则文件加强版](https://github.com/Loyalsoldier/v2ray-rules-dat)（可选）
+4. 下载[服务配置]
+
+```
+sudo curl -Lo /etc/systemd/system/xray.service https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service
+```
+
+curl -Lo /usr/local/etc/xray/config.json https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/config_server.json && curl -Lo /etc/nginx/nginx.conf https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/nginx.conf
+
+5. 下载[路由规则文件加强版](https://github.com/Loyalsoldier/v2ray-rules-dat)（可选）
 
 ```
 curl -Lo /usr/local/share/xray/geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat && curl -Lo /usr/local/share/xray/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 ```
 
-5. 启动程序
+6. 启动程序
 
 ```
 systemctl restart xray && systemctl restart nginx && sleep 0.2 && systemctl status xray && systemctl status nginx
