@@ -44,7 +44,7 @@ apt install -y gnupg2 ca-certificates lsb-release ubuntu-keyring && curl https:/
 curl -Lo /usr/local/etc/xray/config.json https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/config_server.json && curl -Lo /etc/nginx/nginx.conf https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/nginx.conf
 ```
 
-4. 下载[服务配置]
+4. 下载[服务配置](https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service)
 
 ```
 sudo curl -Lo /etc/systemd/system/xray.service https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service
