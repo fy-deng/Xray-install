@@ -50,8 +50,6 @@ curl -Lo /usr/local/etc/xray/config.json https://raw.githubusercontent.com/chika
 sudo curl -Lo /etc/systemd/system/xray.service https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service
 ```
 
-curl -Lo /usr/local/etc/xray/config.json https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/config_server.json && curl -Lo /etc/nginx/nginx.conf https://raw.githubusercontent.com/chika0801/Xray-examples/main/VLESS-XTLS-Vision/nginx.conf
-
 5. 下载[路由规则文件加强版](https://github.com/Loyalsoldier/v2ray-rules-dat)（可选）
 
 ```
