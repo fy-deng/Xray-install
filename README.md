@@ -47,7 +47,7 @@ curl -Lo /usr/local/etc/xray/config.json https://raw.githubusercontent.com/chika
 4. 下载[服务配置](https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service)
 
 ```
-sudo curl -Lo /etc/systemd/system/xray.service https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service
+sudo curl -Lo /etc/systemd/system/xray.service https://raw.githubusercontent.com/fy-deng/Xray-install/diy/xray.service && sudo systemctl daemon-reload
 ```
 
 5. 下载[路由规则文件加强版](https://github.com/Loyalsoldier/v2ray-rules-dat)（可选）
